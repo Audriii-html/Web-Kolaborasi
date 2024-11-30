@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 10%;
+}
+.container{
+    background-color: #1c4a5c;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container ul{
+    list-style: none;
+    display: flex;
+}
+.container ul li{
+    padding: 10px 30px;
+    position: relative;
+    font-weight: 598;
+    text-align: center;
+}
+.container ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.container ul li a:hover{
+    background: #2f97c1;
+    color: black;
+    border-radius: 0.5rem;
+}
+.dropdown{
+    display: none;
+}
+.container ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #2f97c1;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.container ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.container ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+/* Isi Home */
+.col h1 {
+    text-align: justify;
+    margin-top: 200px; /* Adjust this value as needed */
+    padding: 18px 50px;
+    border-radius: 30px;
+    font-size: 40px;
+    color: #f1f5ff;
+    text-shadow: 0 0 10px #2e3bab, 0 0 20px #2e3bab, 0 0 30px #2e3bab;
+}
+
+.col h2 {
+    text-align: justify;
+    margin-top: 5px; /* Adjust this value as needed */
+    padding: 18px 50px;
+    border-radius: 30px;
+    color: #f1f5ff;
+    text-shadow: 0 0 10px #2e3bab, 0 0 20px #2e3bab, 0 0 30px #2e3bab;
+}
+
+.col h3 {
+    text-align: justify;
+    margin-top: 5px; /* Adjust this value as needed */
+    padding: 18px 50px;
+    border-radius: 30px;
+    color: #f1f5ff;
+    text-shadow: 0 0 10px #2e3bab, 0 0 20px #2e3bab, 0 0 30px #2e3bab;
+}
+
+/* Kerja Sama Internasional */
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    text-align: justify;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 50%;
+    margin-left: 30%;
+}
+.blog-left h2{
+    color: #f1f5ff;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 50px;
+}
+.blog-left p{
+    color: #f1f5ff;
+    padding: 0;
+}
+.blog-left li{
+    color: #f1f5ff;
+    padding: 0;
+}
+
+.blog-bil{
+    flex-basis: 65%;
+}
+.blog-bil h2{
+    color: #f1f5ff;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: justify;
+}
+.blog-bil p{
+    color: #f1f5ff;
+    padding: 0;
+    text-align: justify;
+}
+.blog-bil img{
+    width: 50%;
+    margin-left: 30%;
+}
+
+.blog-reg{
+    flex-basis: 65%;
+}
+.blog-reg h2{
+    color: #f1f5ff;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: justify;
+}
+.blog-reg p{
+    color: #f1f5ff;
+    padding: 0;
+    text-align: justify;
+}
+.blog-reg img{
+    width: 50%;
+    margin-left: 30%;
+}
+
+.blog-mul{
+    flex-basis: 65%;
+}
+.blog-mul h2{
+    color: #f1f5ff;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: justify;
+}
+.blog-mul p{
+    color: #f1f5ff;
+    padding: 0;
+    text-align: justify;
+}
+.blog-mul img{
+    width: 50%;
+    margin-left: 30%;
+}
+
+/* SDGS */
+*{
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+html.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5ff;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: space-around;
+    flex-direction: column; /* Agar kotak tersusun vertikal (baris atas dan bawah) */
+    justify-content: center; /* Mengatur posisi tengah */
+    align-items: center; /* Agar kotak berada di tengah secara horizontal */
+    gap: 20px; /* Memberikan jarak antara baris atas dan bawah */
+}
+
+.card{
+   width: 100%;
+   height: 300px;
+   padding: 0;
+   background: #fff;
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); 
+   transition: 0.5s ease-in-out;
+   gap: 100px;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 254px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgba(150, 201, 61, 1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    width: relative;
+    height: 84%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card .info h1{
+    margin: 0;
+}
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* row sama coloumn */
+.row1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Mengatur jarak antar kotak horizontal */
+    align-items: center;
+    gap: 20px;
+}
+.row2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Mengatur jarak antar kotak horizontal */
+    align-items: center;
+    gap: 20px;
+}
+.row3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Mengatur jarak antar kotak horizontal */
+    align-items: center;
+    gap: 20px;
+}
+.row4 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Mengatur jarak antar kotak horizontal */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hubungan Indonesia dan Jerman */
+.blog-jerdo{
+    flex-basis: 65%;
+}
+.blog-jerdo h2{
+    color: #f1f5ff;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: justify;
+}
+.blog-jerdo p{
+    color: #f1f5ff;
+    padding: 0;
+    text-align: justify;
+}
+.blog-jerdo li{
+    color: #f1f5ff;
+    padding: 0;
+    text-align: justify;
+}
+
+.blog-pancasila{
+    flex-basis: 65%;
+}
+.blog-pancasila h2{
+    color: #f1f5ff;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: justify;
+}
+.blog-pancasila p{
+    color: #f1f5ff;
+    padding: 0;
+    text-align: justify;
+}
+.blog-pancasila li{
+    color: #f1f5ff;
+    padding: 0;
+    text-align: justify;
+}
+.blog-pancasila h3{
+    color: #f1f5ff;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: justify;
+}
+.blog-jerdo img{
+    width: 50%;
+    margin-left: 30%;
+}
